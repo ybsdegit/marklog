@@ -78,4 +78,8 @@ public class Result<T> implements Serializable {
     public static Result fail(String message) {
         return new Result(ResultEnum.ERROR.getCode(), message);
     }
+
+    public static Result fail(Integer code, String message) {
+        return new Result(code, message);
+    }
 }
