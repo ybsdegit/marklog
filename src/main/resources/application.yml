@@ -2,7 +2,8 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.2.131:3306/vueblog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://192.168.2.133:3306/vueblog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+#    url: jdbc:mysql://localhost:3306/vueblog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
     username: root
     password: mima
 mybatis-plus:
@@ -11,7 +12,11 @@ mybatis-plus:
 shiro-redis:
   enabled: true
   redis-manager:
-    host: 192.168.2.131:6379
+    host: 192.168.2.133:6379
+#    host: localhost:6379
+#    password: ybsdemima@ybs
+
+
 
 marker:
   jwt:
@@ -20,3 +25,6 @@ marker:
     # token有效时长，7天，单位秒
     expire: 604800
     header: Authorization
+
+server:
+  port: 9001
