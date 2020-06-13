@@ -1,11 +1,11 @@
 package com.ybs.marklog.common.dto;
 
 import lombok.Data;
-
 import javax.validation.constraints.NotBlank;
 import java.io.Serializable;
 
 /**
+ *
  * LoginDto
  *
  * @author Paulson

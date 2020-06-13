@@ -56,6 +56,7 @@ public class AccountController {
                 .put("avatar", user.getAvatar())
                 .put("email", user.getEmail())
                 .map());
+
     }
 
     @RequiresAuthentication
